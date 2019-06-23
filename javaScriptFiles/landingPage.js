@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 
+
     $("#createPost").hover(
         function () {
             $("#hintText").text("Create New Post");
@@ -45,5 +46,27 @@ $(document).ready(function () {
             $("#signUpForm").hide();
         }
     );
+
+    $("#createPost").click(
+        function () {
+            $("#addPostForm").show();
+        }
+    );
+
+    $("#closeAddPost").click(
+        function () {
+            $("#addPostForm").hide();
+        }
+    );
+
+    $("#showPosts").click(function () {
+
+        window.location.href = "allPostsDisplay.html";
+
+    });
+
+
+
+
 
 });
